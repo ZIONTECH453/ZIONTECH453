@@ -1,0 +1,9 @@
+{
+  "name": "ZIONTECH INT'L LTD",
+  "short_name": "ZIONTECH",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#071b35",
+  "theme_color": "#9bd14b",
+  "description": "ZIONTECH phone repair and iPhone panic analyzer"
+}
