@@ -3,77 +3,1177 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="theme-color" content="#9bd14b">
-<meta name="description" content="ZIONTECH INT'L LTD - Professional phone repair, diagnostics and technician training.">
-<title>ZIONTECH INT'L LTD</title>
+
+<meta name="theme-color" content="#0A2342">
+
+<meta name="description"
+content="ZIONTECH INT'L LTD - Professional Android and iPhone repair, chip-level diagnostics, software solutions, phone sales, accessories and mobile phone repair training academy.">
+
+<meta name="keywords"
+content="ZIONTECH, phone repair, iPhone repair, Android repair, phone technician training, chip level repair, iPhone panic analyzer, phone flashing, Ilorin phone repair">
+
+<title>ZIONTECH INT'L LTD | Phone Repair & Training Academy</title>
+
 <link rel="manifest" href="manifest.json">
+
+<link rel="icon" type="image/png" href="images/logo.png">
+
 <link rel="stylesheet" href="style.css">
+
+<style>
+
+/* ===============================
+   ZIONTECH WEBSITE ENHANCEMENTS
+================================ */
+
+:root{
+    --blue:#0A2342;
+    --green:#8BC34A;
+    --dark:#07182d;
+    --light:#f4f7fa;
+    --white:#ffffff;
+    --whatsapp:#25D366;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background:var(--light);
+    color:#333;
+    line-height:1.7;
+}
+
+/* HEADER */
+
+header{
+    background:linear-gradient(135deg,#07182d,#0A2342);
+    color:white;
+    text-align:center;
+    padding:25px 15px;
+}
+
+.logo{
+    width:220px;
+    max-width:90%;
+    height:auto;
+    display:block;
+    margin:0 auto 15px;
+}
+
+header h1{
+    font-size:2rem;
+    margin-bottom:5px;
+}
+
+header p{
+    color:#dce8f2;
+}
+
+/* NAVIGATION */
+
+nav{
+    background:var(--green);
+    padding:14px 10px;
+    text-align:center;
+    position:sticky;
+    top:0;
+    z-index:9999;
+    box-shadow:0 2px 10px rgba(0,0,0,.15);
+}
+
+nav a{
+    display:inline-block;
+    color:#07182d;
+    text-decoration:none;
+    margin:5px 10px;
+    font-weight:bold;
+    font-size:.95rem;
+}
+
+nav a:hover{
+    color:white;
+}
+
+/* HERO */
+
+.hero{
+    min-height:600px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:80px 20px;
+
+    background:
+    linear-gradient(rgba(7,24,45,.88),rgba(7,24,45,.88)),
+    url('https://images.unsplash.com/photo-1511707171634-5f897ff02aa9');
+
+    background-size:cover;
+    background-position:center;
+    color:white;
+}
+
+.hero-badge{
+    display:inline-block;
+    background:var(--green);
+    color:#07182d;
+    padding:7px 16px;
+    border-radius:30px;
+    font-weight:bold;
+    margin-bottom:18px;
+}
+
+.hero h2{
+    font-size:3rem;
+    max-width:900px;
+    margin-bottom:15px;
+}
+
+.hero p{
+    max-width:750px;
+    font-size:1.15rem;
+    margin-bottom:30px;
+    color:#e5edf5;
+}
+
+.hero-buttons{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:12px;
+}
+
+/* BUTTON */
+
+.btn{
+    display:inline-block;
+    background:var(--green);
+    color:#07182d;
+    padding:13px 24px;
+    text-decoration:none;
+    border:none;
+    border-radius:7px;
+    font-weight:bold;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.btn:hover{
+    transform:translateY(-2px);
+    opacity:.9;
+}
+
+.btn-whatsapp{
+    background:var(--whatsapp);
+    color:white;
+}
+
+.btn-blue{
+    background:var(--blue);
+    color:white;
+}
+
+.danger{
+    background:#d9534f;
+    color:white;
+}
+
+/* SECTIONS */
+
+section{
+    padding:75px 20px;
+    max-width:1200px;
+    margin:auto;
+}
+
+.section-title{
+    text-align:center;
+    color:var(--blue);
+    font-size:2.2rem;
+    margin-bottom:12px;
+}
+
+.section-subtitle{
+    text-align:center;
+    max-width:750px;
+    margin:0 auto 40px;
+    color:#666;
+}
+
+/* GRID */
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:22px;
+}
+
+/* CARDS */
+
+.card{
+    background:white;
+    padding:28px;
+    border-radius:12px;
+    box-shadow:0 5px 18px rgba(0,0,0,.08);
+    border-top:4px solid var(--green);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+    box-shadow:0 10px 25px rgba(0,0,0,.12);
+}
+
+.card h3{
+    color:var(--blue);
+    margin-bottom:10px;
+    font-size:1.25rem;
+}
+
+.card p{
+    color:#555;
+}
+
+/* SERVICE ICON */
+
+.service-icon{
+    font-size:2.2rem;
+    margin-bottom:12px;
+}
+
+/* TRAINING */
+
+.training-box{
+    background:#edf6e5;
+    padding:35px;
+    border-radius:14px;
+    margin-bottom:30px;
+}
+
+.module{
+    background:white;
+    padding:20px;
+    margin:15px 0;
+    border-left:5px solid var(--green);
+    border-radius:7px;
+}
+
+.module h3{
+    color:var(--blue);
+    margin-bottom:5px;
+}
+
+/* COURSES */
+
+.course-box{
+    background:linear-gradient(135deg,#0A2342,#07182d);
+    color:white;
+    text-align:center;
+    padding:50px 25px;
+    border-radius:15px;
+    box-shadow:0 8px 25px rgba(0,0,0,.18);
+}
+
+.course-box h3{
+    font-size:1.8rem;
+    margin-bottom:15px;
+}
+
+.course-box p{
+    max-width:750px;
+    margin:0 auto 25px;
+    color:#dce8f2;
+}
+
+/* PANIC ANALYZER */
+
+.analyzer-section{
+    background:#eef4f8;
+    max-width:1200px;
+}
+
+.analyzer{
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 5px 20px rgba(0,0,0,.1);
+    max-width:900px;
+    margin:auto;
+}
+
+.analyzer-intro{
+    text-align:center;
+    margin-bottom:25px;
+}
+
+.analyzer input[type="file"]{
+    width:100%;
+    padding:15px;
+    margin-bottom:15px;
+    border:1px solid #ddd;
+    border-radius:7px;
+    background:#fafafa;
+}
+
+.analyzer textarea{
+    width:100%;
+    min-height:250px;
+    padding:15px;
+    border:1px solid #ccc;
+    border-radius:8px;
+    resize:vertical;
+    font-family:monospace;
+    font-size:.9rem;
+    margin-bottom:15px;
+}
+
+.analyzer-buttons{
+    display:flex;
+    gap:10px;
+    flex-wrap:wrap;
+}
+
+#result{
+    margin-top:25px;
+}
+
+.finding{
+    background:#f5f8fa;
+    padding:13px;
+    margin:8px 0;
+    border-left:4px solid var(--green);
+    border-radius:5px;
+}
+
+#result h3{
+    color:var(--blue);
+    margin:15px 0 10px;
+}
+
+/* ABOUT */
+
+.about-box{
+    background:white;
+    padding:35px;
+    border-radius:12px;
+    box-shadow:0 5px 18px rgba(0,0,0,.08);
+}
+
+.about-box p{
+    margin-bottom:15px;
+}
+
+/* CONTACT */
+
+.contact{
+    max-width:1200px;
+    background:var(--blue);
+    color:white;
+    text-align:center;
+    border-radius:15px;
+    margin:50px auto;
+    padding:60px 20px;
+}
+
+.contact h2{
+    font-size:2.2rem;
+    margin-bottom:20px;
+}
+
+.contact p{
+    margin:8px 0;
+    color:#e5edf5;
+}
+
+/* FOOTER */
+
+footer{
+    background:#050b13;
+    color:white;
+    text-align:center;
+    padding:30px 20px;
+}
+
+footer p{
+    margin:5px 0;
+}
+
+.footer-links{
+    margin:15px 0;
+}
+
+.footer-links a{
+    color:var(--green);
+    text-decoration:none;
+    margin:0 8px;
+}
+
+/* FLOATING WHATSAPP */
+
+.whatsapp{
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    background:var(--whatsapp);
+    color:white;
+    padding:14px 20px;
+    border-radius:50px;
+    text-decoration:none;
+    font-weight:bold;
+    box-shadow:0 4px 15px rgba(0,0,0,.3);
+    z-index:99999;
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+    header h1{
+        font-size:1.5rem;
+    }
+
+    .logo{
+        width:180px;
+    }
+
+    nav{
+        padding:10px 5px;
+    }
+
+    nav a{
+        font-size:.85rem;
+        margin:4px 6px;
+    }
+
+    .hero{
+        min-height:520px;
+        padding:70px 18px;
+    }
+
+    .hero h2{
+        font-size:2rem;
+    }
+
+    .hero p{
+        font-size:1rem;
+    }
+
+    section{
+        padding:55px 15px;
+    }
+
+    .section-title{
+        font-size:1.8rem;
+    }
+
+    .training-box,
+    .analyzer,
+    .about-box{
+        padding:22px;
+    }
+
+    .whatsapp{
+        bottom:15px;
+        right:15px;
+        padding:12px 17px;
+    }
+}
+
+</style>
 </head>
+
 <body>
+
+<!-- =========================
+     HEADER
+========================= -->
+
 <header>
-  <img src="images/logo.png" class="logo" alt="ZIONTECH INT'L LTD Logo">
-  <h1>ZIONTECH INT'L LTD</h1>
-  <p>Phone Repair • Diagnostics • Training Academy</p>
+
+    <img
+        src="images/logo.png"
+        class="logo"
+        alt="ZIONTECH INT'L LTD Logo"
+    >
+
+    <h1>ZIONTECH INT'L LTD</h1>
+
+    <p>
+        Phone Repair • Training • Unlocking • Solutions
+    </p>
+
 </header>
 
+
+<!-- =========================
+     NAVIGATION
+========================= -->
+
 <nav>
-  <a href="#services">Services</a>
-  <a href="#training">Training</a>
-  <a href="#panic-analyzer">Panic Analyzer</a>
-  <a href="#contact">Contact</a>
+
+    <a href="#home">Home</a>
+
+    <a href="#services">Services</a>
+
+    <a href="#training">Training</a>
+
+    <a href="#courses">Buy Courses</a>
+
+    <a href="#panic-analyzer">Panic Analyzer</a>
+
+    <a href="#about">About</a>
+
+    <a href="#contact">Contact</a>
+
 </nav>
 
-<section class="hero">
-  <span>PROFESSIONAL MOBILE REPAIR</span>
-  <h2>Android & iPhone Repair</h2>
-  <p>Chip-level diagnostics, software solutions and practical technician training.</p>
-  <a class="btn" href="https://wa.me/2348063133767">WhatsApp</a>
-  <a class="btn secondary" href="#panic-analyzer">Analyze Panic Log</a>
+
+<!-- =========================
+     HERO
+========================= -->
+
+<section id="home" class="hero">
+
+    <span class="hero-badge">
+        ZIONTECH PROFESSIONAL REPAIR
+    </span>
+
+    <h2>
+        Professional Android & iPhone Repair
+    </h2>
+
+    <p>
+        Advanced phone repair, chip-level diagnostics,
+        software solutions and professional mobile phone
+        technician training.
+    </p>
+
+    <div class="hero-buttons">
+
+        <a
+            href="https://wa.me/2348063133767"
+            class="btn btn-whatsapp"
+            target="_blank"
+        >
+            💬 Chat on WhatsApp
+        </a>
+
+        <a
+            href="#panic-analyzer"
+            class="btn"
+        >
+            🧠 Analyze iPhone Panic
+        </a>
+
+        <a
+            href="#courses"
+            class="btn btn-blue"
+        >
+            📚 View Courses
+        </a>
+
+    </div>
+
 </section>
+
+
+<!-- =========================
+     SERVICES
+========================= -->
 
 <section id="services">
-<h2>Our Services</h2>
-<div class="grid">
-<div class="card"><h3>Android Repair</h3><p>Hardware and software troubleshooting.</p></div>
-<div class="card"><h3>iPhone Repair</h3><p>Board-level diagnostics, charging, boot and display faults.</p></div>
-<div class="card"><h3>Chip-Level Repair</h3><p>Power rails, communication lines and motherboard diagnostics.</p></div>
-<div class="card"><h3>Software Repair</h3><p>Firmware installation, updates and supported servicing.</p></div>
-</div>
+
+    <h2 class="section-title">
+        Our Services
+    </h2>
+
+    <p class="section-subtitle">
+        Professional smartphone repair and technical solutions
+        for Android and iPhone devices.
+    </p>
+
+
+    <div class="grid">
+
+
+        <div class="card">
+
+            <div class="service-icon">📱</div>
+
+            <h3>Android Repair</h3>
+
+            <p>
+                Hardware and software troubleshooting for
+                Android smartphones including power, charging,
+                display, network and boot faults.
+            </p>
+
+        </div>
+
+
+        <div class="card">
+
+            <div class="service-icon">🍎</div>
+
+            <h3>iPhone Repair</h3>
+
+            <p>
+                Professional iPhone troubleshooting including
+                charging, boot, display, motherboard and
+                communication faults.
+            </p>
+
+        </div>
+
+
+        <div class="card">
+
+            <div class="service-icon">🔧</div>
+
+            <h3>Chip-Level Repair</h3>
+
+            <p>
+                Advanced motherboard diagnostics, power rail
+                testing, IC troubleshooting, signal tracing
+                and board-level repair.
+            </p>
+
+        </div>
+
+
+        <div class="card">
+
+            <div class="service-icon">💻</div>
+
+            <h3>Software Repair</h3>
+
+            <p>
+                Firmware installation, software upgrades,
+                supported device servicing and dead-boot
+                troubleshooting.
+            </p>
+
+        </div>
+
+
+        <div class="card">
+
+            <div class="service-icon">⚡</div>
+
+            <h3>DC Power Diagnostics</h3>
+
+            <p>
+                Current consumption analysis and motherboard
+                boot-sequence troubleshooting using a DC
+                power supply.
+            </p>
+
+        </div>
+
+
+        <div class="card">
+
+            <div class="service-icon">🛒</div>
+
+            <h3>Phone & Accessories</h3>
+
+            <p>
+                Quality smartphones, UK-used devices,
+                chargers, cables, power banks and other
+                mobile phone accessories.
+            </p>
+
+        </div>
+
+
+    </div>
+
 </section>
+
+
+<!-- =========================
+     TRAINING ACADEMY
+========================= -->
 
 <section id="training">
-<h2>ZIONTECH Training Academy</h2>
-<div class="grid">
-<div class="card"><h3>Multimeter Masterclass</h3><p>Voltage, resistance, diode mode and continuity testing.</p></div>
-<div class="card"><h3>DC Power Diagnostics</h3><p>Current signatures and boot-sequence troubleshooting.</p></div>
-<div class="card"><h3>Board Repair</h3><p>Schematics, boardview, power rails and signal tracing.</p></div>
-</div>
+
+    <h2 class="section-title">
+        ZIONTECH Training Academy
+    </h2>
+
+    <p class="section-subtitle">
+        Learn professional mobile phone repair from
+        fundamentals to advanced chip-level diagnostics.
+    </p>
+
+
+    <div class="training-box">
+
+
+        <div class="module">
+
+            <h3>
+                Module 1: Phone Repair Fundamentals
+            </h3>
+
+            <p>
+                Electronics fundamentals, repair tools,
+                safety procedures, soldering and professional
+                repair workflow.
+            </p>
+
+        </div>
+
+
+        <div class="module">
+
+            <h3>
+                Module 2: Digital Multimeter Masterclass
+            </h3>
+
+            <p>
+                Learn voltage, resistance, continuity,
+                diode-mode testing and motherboard
+                measurement techniques.
+            </p>
+
+        </div>
+
+
+        <div class="module">
+
+            <h3>
+                Module 3: DC Power Supply Diagnostics
+            </h3>
+
+            <p>
+                Understand current consumption patterns,
+                boot sequences, shorts and abnormal
+                current signatures.
+            </p>
+
+        </div>
+
+
+        <div class="module">
+
+            <h3>
+                Module 4: Android Hardware Repair
+            </h3>
+
+            <p>
+                CPU, PMIC, RAM, eMMC, UFS, charging systems,
+                power rails and Android motherboard diagnostics.
+            </p>
+
+        </div>
+
+
+        <div class="module">
+
+            <h3>
+                Module 5: Chip-Level Repair
+            </h3>
+
+            <p>
+                Schematics, boardview, power rails,
+                signal tracing, IC identification and
+                motherboard troubleshooting.
+            </p>
+
+        </div>
+
+
+        <div class="module">
+
+            <h3>
+                Module 6: Android Software Repair
+            </h3>
+
+            <p>
+                Firmware installation, software upgrades,
+                supported servicing, boot repair and
+                software troubleshooting.
+            </p>
+
+        </div>
+
+
+        <div class="module">
+
+            <h3>
+                Module 7: Professional iPhone Repair
+            </h3>
+
+            <p>
+                iPhone charging systems, NAND-related faults,
+                Face ID diagnostics, boot problems, sensor
+                communication and advanced troubleshooting.
+            </p>
+
+        </div>
+
+
+        <div class="module">
+
+            <h3>
+                Module 8: Live Practical Repairs
+            </h3>
+
+            <p>
+                Work through real repair cases and learn
+                professional diagnostic and repair workflow.
+            </p>
+
+        </div>
+
+
+    </div>
+
 </section>
 
-<section id="panic-analyzer">
-<h2>ZIONTECH iPhone Panic Analyzer</h2>
-<p class="center">Upload or paste an iPhone panic log. Analysis is performed locally in your browser.</p>
-<div class="analyzer">
-<input id="panicFile" type="file" accept=".ips,.panic,.txt,.log,.json">
-<textarea id="panicInput" placeholder="Paste the complete panic log here..."></textarea>
-<button class="btn" id="analyzeBtn">Analyze Panic Log</button>
-<button class="btn danger" id="clearBtn">Clear</button>
-<div id="result"></div>
-</div>
+
+<!-- =========================
+     BUY COURSES
+========================= -->
+
+<section id="courses">
+
+    <h2 class="section-title">
+        Buy Repair Courses
+    </h2>
+
+    <p class="section-subtitle">
+        Take your phone repair skills to the next level.
+    </p>
+
+
+    <div class="course-box">
+
+        <h3>
+            ZIONTECH Professional Repair Courses
+        </h3>
+
+        <p>
+            Learn Android and iPhone repair from beginner
+            to professional level. Get practical knowledge
+            covering chip-level diagnostics, DC power
+            troubleshooting, software repair, motherboard
+            testing and professional repair workflow.
+        </p>
+
+
+        <a
+            href="https://selar.com/m/Ziontech453"
+            target="_blank"
+            rel="noopener"
+            class="btn"
+        >
+            📚 Buy Courses on Selar
+        </a>
+
+    </div>
+
 </section>
+
+
+<!-- =========================
+     IPHONE PANIC ANALYZER
+========================= -->
+
+<section id="panic-analyzer" class="analyzer-section">
+
+    <h2 class="section-title">
+        ZIONTECH iPhone Panic Analyzer
+    </h2>
+
+    <p class="section-subtitle">
+        Upload or paste an iPhone panic log and get
+        technician-focused diagnostic clues directly
+        in your browser.
+    </p>
+
+
+    <div class="analyzer">
+
+        <div class="analyzer-intro">
+
+            <p>
+                <strong>
+                    🔧 Technician Diagnostic Tool
+                </strong>
+            </p>
+
+            <p>
+                You can upload an
+                <strong>.ips</strong>,
+                <strong>.panic</strong>,
+                <strong>.txt</strong>,
+                <strong>.log</strong> or
+                <strong>.json</strong>
+                panic file, or paste the complete panic
+                log below.
+            </p>
+
+        </div>
+
+
+        <input
+            id="panicFile"
+            type="file"
+            accept=".ips,.panic,.txt,.log,.json"
+        >
+
+
+        <textarea
+            id="panicInput"
+            placeholder="Paste the complete iPhone panic log here..."
+        ></textarea>
+
+
+        <div class="analyzer-buttons">
+
+            <button
+                class="btn"
+                id="analyzeBtn"
+                type="button"
+            >
+                🔍 Analyze Panic Log
+            </button>
+
+
+            <button
+                class="btn danger"
+                id="clearBtn"
+                type="button"
+            >
+                🗑 Clear
+            </button>
+
+        </div>
+
+
+        <div id="result"></div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     ABOUT
+========================= -->
+
+<section id="about">
+
+    <h2 class="section-title">
+        About ZIONTECH
+    </h2>
+
+    <p class="section-subtitle">
+        Professional repair. Practical training.
+        Reliable technical solutions.
+    </p>
+
+
+    <div class="about-box">
+
+        <p>
+            <strong>ZIONTECH INT'L LTD</strong> specializes
+            in Android and iPhone repair, software solutions,
+            chip-level diagnostics, motherboard repair,
+            phone sales, accessories and professional
+            mobile phone technician training.
+        </p>
+
+
+        <p>
+            Our goal is to provide quality repair services
+            while helping develop the next generation of
+            professional mobile phone technicians.
+        </p>
+
+
+        <p>
+            Through practical training and real repair cases,
+            ZIONTECH Academy helps technicians understand
+            how to diagnose faults instead of simply replacing
+            components.
+        </p>
+
+
+        <p>
+            <strong>
+                Repair smarter. Diagnose accurately.
+                Build your skills with ZIONTECH.
+            </strong>
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     CONTACT
+========================= -->
 
 <section id="contact" class="contact">
-<h2>Contact ZIONTECH</h2>
-<p>Phone: 08038466732</p>
-<p>WhatsApp: 08063133767</p>
-<p>No. 148 Mark Junction, Tanke, Ilorin, Kwara State, Nigeria</p>
-<a class="btn" href="tel:08038466732">Call Now</a>
+
+    <h2>
+        Contact ZIONTECH
+    </h2>
+
+
+    <p>
+        <strong>Phone:</strong>
+        08038466732
+    </p>
+
+
+    <p>
+        <strong>WhatsApp:</strong>
+        08063133767
+    </p>
+
+
+    <p>
+        <strong>Address:</strong>
+    </p>
+
+
+    <p>
+        No. 148 Mark Junction,<br>
+        Tanke, Ilorin,<br>
+        Kwara State, Nigeria
+    </p>
+
+
+    <br>
+
+
+    <div class="hero-buttons">
+
+        <a
+            href="tel:08038466732"
+            class="btn"
+        >
+            📞 Call Now
+        </a>
+
+
+        <a
+            href="https://wa.me/2348063133767"
+            target="_blank"
+            class="btn btn-whatsapp"
+        >
+            💬 WhatsApp
+        </a>
+
+    </div>
+
 </section>
 
-<footer>© 2026 ZIONTECH INT'L LTD. All Rights Reserved.</footer>
+
+<!-- =========================
+     FOOTER
+========================= -->
+
+<footer>
+
+    <p>
+        <strong>ZIONTECH INT'L LTD</strong>
+    </p>
+
+    <p>
+        Phone Repair • Training • Unlocking • Solutions
+    </p>
+
+
+    <div class="footer-links">
+
+        <a href="#home">Home</a>
+
+        <a href="#services">Services</a>
+
+        <a href="#training">Training</a>
+
+        <a href="#courses">Courses</a>
+
+        <a href="#panic-analyzer">Panic Analyzer</a>
+
+        <a href="#about">About</a>
+
+        <a href="#contact">Contact</a>
+
+    </div>
+
+
+    <p>
+        © 2026 ZIONTECH INT'L LTD. All Rights Reserved.
+    </p>
+
+</footer>
+
+
+<!-- =========================
+     FLOATING WHATSAPP
+========================= -->
+
+<a
+    href="https://wa.me/2348063133767"
+    target="_blank"
+    class="whatsapp"
+    aria-label="Chat with ZIONTECH on WhatsApp"
+>
+    💬 WhatsApp
+</a>
+
+
+<!-- =========================
+     PANIC ANALYZER SCRIPT
+========================= -->
+
 <script src="panic-analyzer.js"></script>
+
+
+<!-- =========================
+     SERVICE WORKER
+========================= -->
+
 <script>
-if ('serviceWorker' in navigator) navigator.serviceWorker.register('service-worker.js');
+
+if ('serviceWorker' in navigator) {
+
+    window.addEventListener('load', function(){
+
+        navigator.serviceWorker.register('service-worker.js')
+        .then(function(){
+
+            console.log('ZIONTECH service worker registered.');
+
+        })
+        .catch(function(error){
+
+            console.log(
+                'Service worker registration failed:',
+                error
+            );
+
+        });
+
+    });
+
+}
+
 </script>
+
 </body>
 </html>
